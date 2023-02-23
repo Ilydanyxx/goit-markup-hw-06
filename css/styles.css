@@ -619,6 +619,7 @@ footer {
 
   background: #4d5ae5;
   border-radius: 4px;
+  border: 0;
 
   font-family: "Roboto";
   font-style: normal;
@@ -761,10 +762,11 @@ footer {
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 8px;
-  padding: 0 16px 0 38px;
+  padding: 0 0 0 38px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .modal-input:focus {
@@ -777,6 +779,7 @@ footer {
   width: 360px;
   height: 120px;
   padding: 8px 16px 8px 16px;
+  box-sizing: border-box;
 }
 .modal-textarea::placeholder {
   font-family: "Roboto";
@@ -850,6 +853,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
 .modal-input:is(:focus) + .modal-icon {
   fill: #4d5ae5;
   border-color: #4d5ae5;
@@ -878,4 +882,9 @@ footer {
 .modal-icon {
   width: 18px;
   height: 24px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
