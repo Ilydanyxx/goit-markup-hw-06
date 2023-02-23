@@ -721,6 +721,8 @@ footer {
 .modal-close:hover {
   background: #404bbf;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   visibility: hidden;
@@ -848,6 +850,8 @@ footer {
 .modal-input:is(:focus) + .modal-icon {
   fill: #4d5ae5;
   border-color: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .policy-text::before {
   content: "";
